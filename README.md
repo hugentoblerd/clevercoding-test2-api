@@ -5,11 +5,8 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-composer install
-
-# serve with hot reload at localhost:8080
-php artisan serve
+# serve at localhost:8080
+php -S localhost:8080 -t api
 ```
 ## Tasks
 
