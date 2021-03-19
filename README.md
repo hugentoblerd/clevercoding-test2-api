@@ -10,7 +10,7 @@ php -S localhost:8080 -t api
 ```
 ## Tasks
 
-- [ ] Setup a backend api that has a rest endpoint that returns a random number in json. 
+- [x] Setup a backend api that has a rest endpoint that returns a random number in json. 
     Deploy backend server so that frontend can make request to it locally. If needed add CORs exception for frontend if the frontend is not local to the backend environment. This is usually only a problem when using containers for the environment.
     Example JSON return is ``` {'results': 12} ```
 
