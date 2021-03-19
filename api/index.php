@@ -1,6 +1,6 @@
 <?php
-require "../start.php";
-use Src/RandomNumber;
+require_once("../src/RandomNumber.php");
+use Src\RandomNumber;
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
