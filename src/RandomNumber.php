@@ -19,15 +19,16 @@ class RandomNumber {
 
         header($response['status_code_header']);
         if ($response['body']) {
-            echo $response['body'];
+            echo json_encode($response['body']);
         }
     }
 
     private function getRandomNumber()
     {
         $number = rand(1, 100);
+
         $response['status_code_header'] = 'HTTP/1.1 200 OK';
-        $response['body'] = json_encode(array('results', $number));
+        $response['body']['results'] = $number;
         return $response;
     }
 
